@@ -2,11 +2,10 @@ from django.shortcuts import render
 import time
 
 menu = [
-    {'title':'Главная', 'name':'home'},
-    {'title':'Рабочий процесс', 'name':'work_process'},
-    {'title':'Отзывы', 'name':'reviews'},
-    {'title':'Контакты', 'name':'contacts'},
-    {'title':'Оставить заявку', 'name':'application'},
+{'title':'Главная', 'name':'home'},
+{'title':'Рабочий процесс', 'name':'work_process'},
+{'title':'Отзывы', 'name':'reviews'},
+{'title':'Контакты', 'name':'contacts'},
 ]
 def home(request):
     data = {
