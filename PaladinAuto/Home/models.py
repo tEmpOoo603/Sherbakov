@@ -10,7 +10,7 @@ class Applications(models.Model):
     phone = models.CharField(max_length=11, verbose_name='Телефон')
     email = models.EmailField(max_length=100, blank=True, verbose_name='Почта')
     comment = models.TextField(max_length=500, blank=True, verbose_name='Комментарий')
-    create_time = models.DateTimeField(auto_now=True, verbose_name='Дата создания заявки')
+    create_time = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания заявки')
     status = models.TextField(choices=Status.choices, default=Status.AWAITING, blank=True, verbose_name='Статус')
 
     class Meta:
